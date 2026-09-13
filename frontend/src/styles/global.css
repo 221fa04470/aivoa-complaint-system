@@ -1,0 +1,78 @@
+:root {
+  --ink-900: #0f2438;
+  --ink-700: #24425c;
+  --ink-500: #5b7488;
+  --ink-300: #9fb0bd;
+  --slate-50: #eef1f4;
+  --slate-100: #e2e7ec;
+  --hairline: #d3dbe2;
+  --white: #ffffff;
+
+  --teal-600: #0e7c86;
+  --teal-700: #0b636b;
+  --teal-050: #e3f1f2;
+
+  --red-600: #b42318;
+  --red-050: #fbeae8;
+  --amber-600: #b7791f;
+  --amber-050: #faf1e2;
+  --green-600: #15803d;
+  --green-050: #e8f5ed;
+
+  --radius: 3px;
+  --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--slate-50);
+  color: var(--ink-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: var(--font);
+}
+
+::selection {
+  background: var(--teal-050);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--teal-600);
+  outline-offset: 1px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--ink-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
